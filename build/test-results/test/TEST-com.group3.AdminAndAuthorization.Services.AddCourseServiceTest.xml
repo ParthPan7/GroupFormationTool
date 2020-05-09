@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.AdminAndAuthorization.Services.AddCourseServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:16" hostname="Parths-MacBook-Air.local" time="0.013">
+  <properties/>
+  <testcase name="testAddCourseService()" classname="com.group3.AdminAndAuthorization.Services.AddCourseServiceTest" time="0.001"/>
+  <testcase name="testInsertCourseDetails()" classname="com.group3.AdminAndAuthorization.Services.AddCourseServiceTest" time="0.0"/>
+  <testcase name="testAddCourseServiceCreatedSuccess()" classname="com.group3.AdminAndAuthorization.Services.AddCourseServiceTest" time="0.001"/>
+  <testcase name="testAddCourseServiceAlreadyExist()" classname="com.group3.AdminAndAuthorization.Services.AddCourseServiceTest" time="0.001"/>
+  <system-out><![CDATA[CSCI7800
+CSCI5308
+CSCI8000
+
+ CC : Advanced Game Development with CSCT6707 created successfully
+Advanced Game Development with CSCT6707 created successfully
+CSCI7800
+CSCI5308
+Course Name  Quality Assurance with Course Id CSCI5308 already exists !! 
+Course Name  Quality Assurance with Course Id CSCI5308 already exists !! 
+Course Name  Quality Assurance with Course Id CSCI5308 already exists !!  true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

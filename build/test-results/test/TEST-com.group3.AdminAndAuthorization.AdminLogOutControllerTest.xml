@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.AdminAndAuthorization.AdminLogOutControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:08" hostname="Parths-MacBook-Air.local" time="0.046">
+  <properties/>
+  <testcase name="testAdminLogout()" classname="com.group3.AdminAndAuthorization.AdminLogOutControllerTest" time="0.046"/>
+  <system-out><![CDATA[2020-03-06 05:05:08.067  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group3.AdminAndAuthorization.AdminLogOutControllerTest], using SpringBootContextLoader
+2020-03-06 05:05:08.068  INFO 43250 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group3.AdminAndAuthorization.AdminLogOutControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-06 05:05:08.073  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-03-06 05:05:08.075  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@79f43c56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e0af2d3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@12265991, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@35ef5a34, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d21c653, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74a42d4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@54ee089a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1b9fc6c9, org.springframework.test.context.event.EventPublishingTestExecutionListener@786f88b7, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2d7404a9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9fa7345, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6cb6553d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6818522c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@65c442ca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3f7e656c]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /adminLogout
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@81c98b2: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@81c98b2: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMIN}
+
+Handler:
+             Type = com.group3.AdminAndAuthorization.AdminLogOutController
+           Method = com.group3.AdminAndAuthorization.AdminLogOutController#adminLogout()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = login.html
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Language:"en", Content-Type:"text/html;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html lang="en"
+xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<style type="text/css">
+	.login-form {
+		width: 340px;
+    	margin: 50px auto;
+	}
+    .login-form form {
+    	margin-bottom: 15px;
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+
+
+<div class="login-form">
+
+	
+	
+    
+
+<h4 style="color: green"></h4>
+<h4 style="color: green"></h4>
+    <form action="/login" method="post">
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>
+              
+    </form>
+    Go to <a href="signUp">Sign Up</a>
+    <br></br>
+    <a href="enterEmail">Forgot Password</a>
+</div>
+</body>
+</html>                                		                            
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

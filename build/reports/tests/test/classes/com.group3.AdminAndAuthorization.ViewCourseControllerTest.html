@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ViewCourseControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ViewCourseControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.group3.AdminAndAuthorization.html">com.group3.AdminAndAuthorization</a> &gt; ViewCourseControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.088s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testViewCoursePage()</td>
+<td class="success">0.088s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-03-06 05:05:16.115  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group3.AdminAndAuthorization.ViewCourseControllerTest], using SpringBootContextLoader
+2020-03-06 05:05:16.117  INFO 43250 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group3.AdminAndAuthorization.ViewCourseControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-06 05:05:16.122  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-03-06 05:05:16.123  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@55f6e495, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50e42c39, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@630f81f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4fcb166, org.springframework.test.context.support.DirtiesContextTestExecutionListener@664c2f20, org.springframework.test.context.transaction.TransactionalTestExecutionListener@17b84234, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@16c9b0dc, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@775f54e2, org.springframework.test.context.event.EventPublishingTestExecutionListener@706d4006, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@251105dd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7e850ef3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@73f0bd85, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6987be8d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4495718d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@12310d7a]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /ViewCoursesPage
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@81c98b2: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@81c98b2: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMIN}
+
+Handler:
+             Type = com.group3.AdminAndAuthorization.ViewCourseController
+           Method = com.group3.AdminAndAuthorization.ViewCourseController#viewCoursePage(Model)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = ViewCoursePage.html
+             View = null
+        Attribute = courseList
+            value = [com.group3.BusinessModels.Course@45ae32e8, com.group3.BusinessModels.Course@106da2a0, com.group3.BusinessModels.Course@10ae80e2, com.group3.BusinessModels.Course@62e1feaa, com.group3.BusinessModels.Course@566cb96c, com.group3.BusinessModels.Course@2be979a3, com.group3.BusinessModels.Course@4f2445ac, com.group3.BusinessModels.Course@225df64c, com.group3.BusinessModels.Course@11498cb2, com.group3.BusinessModels.Course@710ddb59, com.group3.BusinessModels.Course@1c69e9f1, com.group3.BusinessModels.Course@514b83a6, com.group3.BusinessModels.Course@cbab921, com.group3.BusinessModels.Course@13f26cfc, com.group3.BusinessModels.Course@40072912, com.group3.BusinessModels.Course@4d5cd407, com.group3.BusinessModels.Course@14760f3c, com.group3.BusinessModels.Course@146304c2, com.group3.BusinessModels.Course@6dd5f0e5, com.group3.BusinessModels.Course@4602fdb4, com.group3.BusinessModels.Course@622905a7, com.group3.BusinessModels.Course@6e604834, com.group3.BusinessModels.Course@2c70dfc5, com.group3.BusinessModels.Course@7d4e78a2, com.group3.BusinessModels.Course@57e04e91, com.group3.BusinessModels.Course@3b2d9db1, com.group3.BusinessModels.Course@1189e3e6, com.group3.BusinessModels.Course@1f0c021d, com.group3.BusinessModels.Course@4a4d53ab, com.group3.BusinessModels.Course@1dda9f46, com.group3.BusinessModels.Course@4312c9c8, com.group3.BusinessModels.Course@3c71275d, com.group3.BusinessModels.Course@1c01eb73, com.group3.BusinessModels.Course@5568671a, com.group3.BusinessModels.Course@61b8f6, com.group3.BusinessModels.Course@351f3c68, com.group3.BusinessModels.Course@265613cb, com.group3.BusinessModels.Course@3010f0ac, com.group3.BusinessModels.Course@3dbb5850, com.group3.BusinessModels.Course@718bdff3, com.group3.BusinessModels.Course@67d54242, com.group3.BusinessModels.Course@50f74b84, com.group3.BusinessModels.Course@3769f012, com.group3.BusinessModels.Course@18b2c54b, com.group3.BusinessModels.Course@55b8434d, com.group3.BusinessModels.Course@3f798915, com.group3.BusinessModels.Course@47e80788, com.group3.BusinessModels.Course@497e0aa3, com.group3.BusinessModels.Course@5e4b8aea, com.group3.BusinessModels.Course@2d898117, com.group3.BusinessModels.Course@2a5a1769, com.group3.BusinessModels.Course@13c82b93, com.group3.BusinessModels.Course@1156ffda, com.group3.BusinessModels.Course@70b645de, com.group3.BusinessModels.Course@aadf5fe, com.group3.BusinessModels.Course@58ebc38b, com.group3.BusinessModels.Course@1beccc01, com.group3.BusinessModels.Course@461c5764, com.group3.BusinessModels.Course@538dfae3, com.group3.BusinessModels.Course@9657818, com.group3.BusinessModels.Course@7faae533, com.group3.BusinessModels.Course@7a2861f3, com.group3.BusinessModels.Course@15d01a60, com.group3.BusinessModels.Course@4f2cd70b, com.group3.BusinessModels.Course@678730a0, com.group3.BusinessModels.Course@5e19f25a, com.group3.BusinessModels.Course@4b8fe0e3, com.group3.BusinessModels.Course@62b2e216, com.group3.BusinessModels.Course@3c6edcd0, com.group3.BusinessModels.Course@2d746225, com.group3.BusinessModels.Course@19481790, com.group3.BusinessModels.Course@6c1ff4fd, com.group3.BusinessModels.Course@265d2df2, com.group3.BusinessModels.Course@28b61656, com.group3.BusinessModels.Course@719b7047, com.group3.BusinessModels.Course@62b0ca95, com.group3.BusinessModels.Course@2dcd498c, com.group3.BusinessModels.Course@3551eec5, com.group3.BusinessModels.Course@1f62a960, com.group3.BusinessModels.Course@7b623c7b, com.group3.BusinessModels.Course@3ca49bb2]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Language:&quot;en&quot;, Content-Type:&quot;text/html;charset=UTF-8&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = text/html;charset=UTF-8
+             Body = &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;&gt;
+    &lt;title&gt;ViewCoursePageDesign&lt;/title&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;&gt;
+  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body style=&quot;color: #0066cc;line-height: 30px;&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1 style=&quot;line-height: 30px;font-size: 19px;font-color:green;&quot;&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Currently available courses&lt;/strong&gt;&lt;/h1&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;container&quot;&gt;
+        
+        &lt;div class=&quot;table-responsive&quot;&gt;
+          
+            &lt;table class=&quot;table&quot; border=&quot;1&quot; align=&quot;center&quot;&gt;
+                &lt;thead &gt;
+                    &lt;tr &gt;
+                        &lt;th align = &quot;center&quot;&gt;Course ID&lt;/th&gt;
+                        &lt;th align = &quot;center&quot;&gt;Course Name&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT7777&lt;/td&gt;
+                        &lt;td&gt;Computational Biotechnology II&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;csci6406&lt;/td&gt;
+                        &lt;td&gt;Visualization&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCI6748&lt;/td&gt;
+                        &lt;td&gt;Virtual Reality&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT3100&lt;/td&gt;
+                        &lt;td&gt;NLP Advanced&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    &lt;tr align = &quot;left&quot;&gt;
+                        &lt;td&gt;CSCT5111&lt;/td&gt;
+                        &lt;td&gt;Data Technology&lt;/td&gt;
+                       
+                    &lt;/tr&gt;
+                    
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+&lt;/body&gt;
+
+&lt;/html&gt;
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.0.1</a> at Mar. 6, 2020, 5:07:42 a.m.</p>
+</div>
+</div>
+</body>
+</html>

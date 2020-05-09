@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.CreateQuestion.DAO.RetrieveQuestionsDAOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:03" hostname="Parths-MacBook-Air.local" time="0.096">
+  <properties/>
+  <testcase name="obtainInstructorQuestionsTest()" classname="com.group3.CreateQuestion.DAO.RetrieveQuestionsDAOTest" time="0.096"/>
+  <system-out><![CDATA[2020-03-06 05:05:03.163  INFO 43250 --- [    Test worker] c.g.C.DAO.RetrieveQuestionsDAOTest       : ObtainQuestionsServiceTest setup!
+2020-03-06 05:05:03.192  INFO 43250 --- [    Test worker] c.g.C.DAO.RetrieveQuestionsDAOTest       : Test Question Inserted!
+2020-03-06 05:05:03.194  INFO 43250 --- [    Test worker] c.g.C.DAO.RetrieveQuestionsDAOTest       : Test QuestionId retrieved for testing purpose!
+2020-03-06 05:05:03.200  INFO 43250 --- [    Test worker] c.g.C.DAO.RetrieveQuestionsDAOTest       : Test Instructor Inserted!
+2020-03-06 05:05:03.220  INFO 43250 --- [    Test worker] c.g.C.DAO.RetrieveQuestionsDAO           : Fetching questions for instructor: test@dal.ca
+2020-03-06 05:05:03.224  INFO 43250 --- [    Test worker] c.g.C.DAO.RetrieveQuestionsDAO           : Question fetched: 498
+2020-03-06 05:05:03.224  INFO 43250 --- [    Test worker] c.g.C.DAO.RetrieveQuestionsDAO           : Questions fetched for the instructor with ID: test@dal.ca
+Test Question Deleted!
+Test Instructor Deleted!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

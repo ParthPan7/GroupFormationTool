@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.CreateQuestion.Services.StringValidatorServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:08" hostname="Parths-MacBook-Air.local" time="0.03">
+  <properties/>
+  <testcase name="isValid()" classname="com.group3.CreateQuestion.Services.StringValidatorServiceTest" time="0.03"/>
+  <system-out><![CDATA[2020-03-06 05:05:08.010 ERROR 43250 --- [    Test worker] c.g.C.S.EmptyStringValidationService     : Empty String detected
+2020-03-06 05:05:08.036 ERROR 43250 --- [    Test worker] .S.StartWithNumberCheckValidationService : digit detected at the start of the question
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

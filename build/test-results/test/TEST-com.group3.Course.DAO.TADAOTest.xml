@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.Course.DAO.TADAOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:04:52" hostname="Parths-MacBook-Air.local" time="0.138">
+  <properties/>
+  <testcase name="getCoursesByTAMailId()" classname="com.group3.Course.DAO.TADAOTest" time="0.138"/>
+  <system-out><![CDATA[Test Course ID Inserted!
+Test Course ID Inserted!
+2020-03-06 05:04:52.165  INFO 43250 --- [    Test worker] com.group3.Course.DAO.CourseDAO          : SELECT C.COURSE_ID, C.COURSE_NAME FROM COURSES C JOIN student_enrollments S ON S.COURSE_ID=C.COURSE_ID WHERE S.MAIL_ID="test1234@dal.ca"
+2020-03-06 05:04:52.169  INFO 43250 --- [    Test worker] com.group3.Course.DAO.CourseDAO          : CSCI04: TEST
+Test Course deleted!
+Test Instructor deleted!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

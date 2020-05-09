@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.Login.Services.LoginAuthenticationSuccessHandlerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:04:43" hostname="Parths-MacBook-Air.local" time="0.58">
+  <properties/>
+  <testcase name="afterAdminLoginRedirectingToAdminDashBoard" classname="com.group3.Login.Services.LoginAuthenticationSuccessHandlerTest" time="0.58"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-03-06 05:04:41.562  INFO 43250 --- [    Test worker] .S.LoginAuthenticationSuccessHandlerTest : Starting LoginAuthenticationSuccessHandlerTest on TA143.WPA.Dal.Ca with PID 43250 (started by parthpanchal7 in /Users/parthpanchal7/Documents/realsedProject/freshRepo/group-three)
+2020-03-06 05:04:41.563  INFO 43250 --- [    Test worker] .S.LoginAuthenticationSuccessHandlerTest : No active profile set, falling back to default profiles: default
+2020-03-06 05:04:42.343  INFO 43250 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-03-06 05:04:42.344  INFO 43250 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 05:04:42.345  INFO 43250 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 05:04:42.387  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-03-06 05:04:42.390  INFO 43250 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 821 ms
+2020-03-06 05:04:42.503  INFO 43250 --- [    Test worker] c.g.C.Services.DeleteQuestionService     : DeleteQuestionService constructor called!
+2020-03-06 05:04:42.504  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:04:42.507  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:04:42.511  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:04:43.109  INFO 43250 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@303b448b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d5ad408, org.springframework.security.web.header.HeaderWriterFilter@63124295, org.springframework.web.filter.CorsFilter@16cabcd1, org.springframework.security.web.authentication.logout.LogoutFilter@14ca3bb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a2f7980, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5593fc82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24641a4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f625c3f, org.springframework.security.web.session.SessionManagementFilter@23750227, org.springframework.security.web.access.ExceptionTranslationFilter@b167cf5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ebef3e4]
+2020-03-06 05:04:43.198  INFO 43250 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 05:04:43.472  INFO 43250 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59468 (http) with context path ''
+2020-03-06 05:04:43.474  INFO 43250 --- [    Test worker] .S.LoginAuthenticationSuccessHandlerTest : Started LoginAuthenticationSuccessHandlerTest in 1.969 seconds (JVM running for 14.175)
+2020-03-06 05:04:43.480  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:43.480  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:43.489  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2020-03-06 05:04:43.696  INFO 43250 --- [    Test worker] com.group3.Login.DAO.LoginDao            : email admin@dal.ca
+2020-03-06 05:04:43.725  INFO 43250 --- [    Test worker] com.group3.Login.DAO.LoginDao            : role Admin
+2020-03-06 05:04:43.727  WARN 43250 --- [    Test worker] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /login
+       Parameters = {email=[admin@dal.ca], password=[admin], _csrf=[5d8544f5-195b-4fd3-85ce-b02e5dca6903]}
+          Headers = [Accept:"application/x-www-form-urlencoded"]
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@33dac1b2: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@33dac1b2: Principal: org.springframework.security.core.userdetails.User@73799d2e: Username: admin@dal.ca; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ADMIN}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"adminMainPageRequest"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = adminMainPageRequest
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.CreateQuestion.Services.CurrentTimeStampGenerationServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:08" hostname="Parths-MacBook-Air.local" time="0.002">
+  <properties/>
+  <testcase name="returnCurrentTimeStamp()" classname="com.group3.CreateQuestion.Services.CurrentTimeStampGenerationServiceTest" time="0.002"/>
+  <system-out><![CDATA[2020-03-06 05:05:08.006  INFO 43250 --- [    Test worker] .S.CurrentTimeStampGenerationServiceTest : 2020-03-06 05:05:08.006
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

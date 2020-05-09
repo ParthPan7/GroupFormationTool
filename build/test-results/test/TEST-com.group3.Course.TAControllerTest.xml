@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.Course.TAControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:04:51" hostname="Parths-MacBook-Air.local" time="0.195">
+  <properties/>
+  <testcase name="addStudentAsTA()" classname="com.group3.Course.TAControllerTest" time="0.004"/>
+  <testcase name="searchStudent()" classname="com.group3.Course.TAControllerTest" time="0.126"/>
+  <testcase name="getAllStudents()" classname="com.group3.Course.TAControllerTest" time="0.053"/>
+  <system-out><![CDATA[2020-03-06 05:04:50.115  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group3.Course.TAControllerTest], using SpringBootContextLoader
+2020-03-06 05:04:50.116  INFO 43250 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group3.Course.TAControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-06 05:04:50.129  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-03-06 05:04:50.132  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2c2e9e6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@591a2267, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1bb9f38, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1a509875, org.springframework.test.context.support.DirtiesContextTestExecutionListener@42d5989b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4a5493bc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@174b8791, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@9c6263d, org.springframework.test.context.event.EventPublishingTestExecutionListener@67b976de, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@99ec0e6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@42a2a94b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7a6d88ec, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@56ce1ef9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@29287d36, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7e1761a9]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-03-06 05:04:50.173  INFO 43250 --- [    Test worker] com.group3.Course.TAControllerTest       : Starting TAControllerTest on TA143.WPA.Dal.Ca with PID 43250 (started by parthpanchal7 in /Users/parthpanchal7/Documents/realsedProject/freshRepo/group-three)
+2020-03-06 05:04:50.173  INFO 43250 --- [    Test worker] com.group3.Course.TAControllerTest       : No active profile set, falling back to default profiles: default
+2020-03-06 05:04:50.671  INFO 43250 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-03-06 05:04:50.672  INFO 43250 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 05:04:50.673  INFO 43250 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 05:04:50.724  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-03-06 05:04:50.724  INFO 43250 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 544 ms
+2020-03-06 05:04:50.814  INFO 43250 --- [    Test worker] c.g.C.Services.DeleteQuestionService     : DeleteQuestionService constructor called!
+2020-03-06 05:04:50.814  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:04:50.817  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:04:50.819  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:04:51.234  INFO 43250 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@95b8b3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7124f2a0, org.springframework.security.web.header.HeaderWriterFilter@5d4e5c90, org.springframework.web.filter.CorsFilter@660b7237, org.springframework.security.web.authentication.logout.LogoutFilter@31e67d25, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ca1efd7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c13c5be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6396aa70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e16567, org.springframework.security.web.session.SessionManagementFilter@582b8702, org.springframework.security.web.access.ExceptionTranslationFilter@a56fb89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75a23584]
+2020-03-06 05:04:51.318  INFO 43250 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 05:04:51.533  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:51.533  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:51.543  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
+2020-03-06 05:04:51.572  INFO 43250 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59520 (http) with context path ''
+2020-03-06 05:04:51.573  INFO 43250 --- [    Test worker] com.group3.Course.TAControllerTest       : Started TAControllerTest in 1.434 seconds (JVM running for 22.274)
+2020-03-06 05:04:51.589  INFO 43250 --- [    Test worker] com.group3.Course.TAController           : SEARCH STUDENT: a@dal.ca
+2020-03-06 05:04:51.624  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : SEARCH STUDENT QUERY EXECUTED
+2020-03-06 05:04:51.624  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Stark
+2020-03-06 05:04:51.625  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Aick
+2020-03-06 05:04:51.625  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Bick
+2020-03-06 05:04:51.625  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Wick
+2020-03-06 05:04:51.626  INFO 43250 --- [    Test worker] com.group3.Course.TAController           : [com.group3.BusinessModels.Student@156caa4b, com.group3.BusinessModels.Student@41ce57, com.group3.BusinessModels.Student@3841aae0, com.group3.BusinessModels.Student@65286d43]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /searchStudent
+       Parameters = {studentMailId=[a@dal.ca]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@c5ef2044: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@c5ef2044: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_INSTRUCTOR,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_INSTRUCTOR, ROLE_TA}
+
+Handler:
+             Type = com.group3.Course.TAController
+           Method = com.group3.Course.TAController#searchStudent(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = studentList.html
+             View = null
+        Attribute = studentList
+            value = [com.group3.BusinessModels.Student@156caa4b, com.group3.BusinessModels.Student@41ce57, com.group3.BusinessModels.Student@3841aae0, com.group3.BusinessModels.Student@65286d43]
+        Attribute = courseInfo
+            value = com.group3.BusinessModels.Course@15312065
+           errors = []
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Language:"en", Content-Type:"text/html;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+<style>
+
+</style>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Welcome to the portal</h1>
+  <h3></h3>
+  <h4></h4>
+  <p>List of students</p> 
+  <button class="btn btn-primary active" onclick="window.location.href='courseAdmin'">Home</button>
+</div>
+
+<center>
+
+	<form action="/searchStudent" method="POST">
+	  	<input type="text" name="studentMailId" id="studentMailId" placeholder="Enter student mail id">
+		<button type="submit">Select</button>
+	</form>
+	<br><br>
+	<button class="btn btn-primary active" onclick="window.location.href='showAllStudents'">Reset</button>
+	<br><br>
+	<table class="table" border="1">
+	<thead class="thead-dark">
+		<tr>
+		<!-- <th>Banner ID</th>  -->
+		<th>Last Name</th>
+		<th>First Name</th>
+		<th>Email</th>
+		<th>Action</th>
+		</tr>
+	    <tr>
+	        <td>
+	            <span>T</span>
+	        </td>
+	        <td>
+	            <span>Stark</span>
+	        </td>
+	        <td>
+	            <span>a@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="a@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>A</span>
+	        </td>
+	        <td>
+	            <span>Aick</span>
+	        </td>
+	        <td>
+	            <span>ata@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="ata@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>B</span>
+	        </td>
+	        <td>
+	            <span>Bick</span>
+	        </td>
+	        <td>
+	            <span>bta@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="bta@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>J</span>
+	        </td>
+	        <td>
+	            <span>Wick</span>
+	        </td>
+	        <td>
+	            <span>jta@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="jta@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    <tr>
+	</table>
+</center>
+</body>
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2020-03-06 05:04:51.722  INFO 43250 --- [    Test worker] com.group3.Course.TAController           : SHOW ALL STUDENTS
+2020-03-06 05:04:51.750  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : QUERY EXECUTED
+2020-03-06 05:04:51.751  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : y
+2020-03-06 05:04:51.751  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Etark
+2020-03-06 05:04:51.751  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : z
+2020-03-06 05:04:51.751  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Pan
+2020-03-06 05:04:51.751  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Rogers
+2020-03-06 05:04:51.751  INFO 43250 --- [    Test worker] com.group3.Course.DAO.StudentDAO         : Stark
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /showAllStudents
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@c5ef2044: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@c5ef2044: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_INSTRUCTOR,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_INSTRUCTOR, ROLE_TA}
+
+Handler:
+             Type = com.group3.Course.TAController
+           Method = com.group3.Course.TAController#getAllStudents()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = studentList.html
+             View = null
+        Attribute = studentList
+            value = [com.group3.BusinessModels.Student@3beab9c1, com.group3.BusinessModels.Student@1c7d3ca2, com.group3.BusinessModels.Student@5f9d618d, com.group3.BusinessModels.Student@22eee54a, com.group3.BusinessModels.Student@4ca47467, com.group3.BusinessModels.Student@3949c97d]
+        Attribute = courseInfo
+            value = com.group3.BusinessModels.Course@15312065
+           errors = []
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Language:"en", Content-Type:"text/html;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+<style>
+
+</style>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Welcome to the portal</h1>
+  <h3>NA</h3>
+  <h4>NA</h4>
+  <p>List of students</p> 
+  <button class="btn btn-primary active" onclick="window.location.href='courseAdmin'">Home</button>
+</div>
+
+<center>
+
+	<form action="/searchStudent" method="POST">
+	  	<input type="text" name="studentMailId" id="studentMailId" placeholder="Enter student mail id">
+		<button type="submit">Select</button>
+	</form>
+	<br><br>
+	<button class="btn btn-primary active" onclick="window.location.href='showAllStudents'">Reset</button>
+	<br><br>
+	<table class="table" border="1">
+	<thead class="thead-dark">
+		<tr>
+		<!-- <th>Banner ID</th>  -->
+		<th>Last Name</th>
+		<th>First Name</th>
+		<th>Email</th>
+		<th>Action</th>
+		</tr>
+	    <tr>
+	        <td>
+	            <span>d</span>
+	        </td>
+	        <td>
+	            <span>y</span>
+	        </td>
+	        <td>
+	            <span>d@d.com</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="d@d.com" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>E</span>
+	        </td>
+	        <td>
+	            <span>Etark</span>
+	        </td>
+	        <td>
+	            <span>e@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="e@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>e</span>
+	        </td>
+	        <td>
+	            <span>z</span>
+	        </td>
+	        <td>
+	            <span>e@e.com</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="e@e.com" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>Peter</span>
+	        </td>
+	        <td>
+	            <span>Pan</span>
+	        </td>
+	        <td>
+	            <span>ppan@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="ppan@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>Steve</span>
+	        </td>
+	        <td>
+	            <span>Rogers</span>
+	        </td>
+	        <td>
+	            <span>rsteve@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="rsteve@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    
+	    <tr>
+	        <td>
+	            <span>Tony</span>
+	        </td>
+	        <td>
+	            <span>Stark</span>
+	        </td>
+	        <td>
+	            <span>tonystark@dal.ca</span>
+	        </td>
+	        <td>
+		        <form action="/addTA" method="POST">
+		        
+	    	<input type="hidden" name="studentMailId" id="studentMailId" value="tonystark@dal.ca" />
+		    <button type="submit">Select</button>
+	
+		        </form>
+	        </td>
+	    <tr>
+	</table>
+</center>
+</body>
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
