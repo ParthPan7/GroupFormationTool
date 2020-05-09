@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.AdminAndAuthorization.Services.CourseInputValidationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:16" hostname="Parths-MacBook-Air.local" time="0.004">
+  <properties/>
+  <testcase name="testValidateInputCourseInValidCourseName()" classname="com.group3.AdminAndAuthorization.Services.CourseInputValidationTest" time="0.001"/>
+  <testcase name="testValidateInputCourseInValidCourseId()" classname="com.group3.AdminAndAuthorization.Services.CourseInputValidationTest" time="0.001"/>
+  <testcase name="testValidateInputCourseValidCourseName()" classname="com.group3.AdminAndAuthorization.Services.CourseInputValidationTest" time="0.001"/>
+  <testcase name="testValidateInputCourseValidCourseId()" classname="com.group3.AdminAndAuthorization.Services.CourseInputValidationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

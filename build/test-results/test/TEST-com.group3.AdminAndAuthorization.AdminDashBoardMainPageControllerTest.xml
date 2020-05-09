@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.AdminAndAuthorization.AdminDashBoardMainPageControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:16" hostname="Parths-MacBook-Air.local" time="0.012">
+  <properties/>
+  <testcase name="testReturnAdminDashBoardPage()" classname="com.group3.AdminAndAuthorization.AdminDashBoardMainPageControllerTest" time="0.012"/>
+  <system-out><![CDATA[2020-03-06 05:05:16.527  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group3.AdminAndAuthorization.AdminDashBoardMainPageControllerTest], using SpringBootContextLoader
+2020-03-06 05:05:16.528  INFO 43250 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group3.AdminAndAuthorization.AdminDashBoardMainPageControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-06 05:05:16.531  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-03-06 05:05:16.531  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@27681a6b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@42528b23, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7edff85f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@217fe4be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@46a319b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@10fe89dc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@11e2969c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4f66da0a, org.springframework.test.context.event.EventPublishingTestExecutionListener@11567487, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@7502bf18, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@70519152, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@91ea3d8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2bce0c30, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4b549c2e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37735f17]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /adminMainPageRequest
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@81c98b2: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@81c98b2: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMIN}
+
+Handler:
+             Type = com.group3.AdminAndAuthorization.AdminDashBoardMainPageController
+           Method = com.group3.AdminAndAuthorization.AdminDashBoardMainPageController#returnAdminDashBoardPage()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = AdminMainPage.html
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Language:"en", Content-Type:"text/html;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Administration DashBoard</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="addCoursePageRequest">New Course</a></li>
+          <li><a href="DeleteCoursePage">Delete Course</a></li>
+          <li><a href="ViewCoursesPage">View Course</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="grantInstructorPage">Grant Instructor</a></li>
+       <li><a href="adminLogout">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+</body>
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,2342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.AdminAndAuthorization.DeleteCourseControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:16" hostname="Parths-MacBook-Air.local" time="0.266">
+  <properties/>
+  <testcase name="testDeleteCoursePage()" classname="com.group3.AdminAndAuthorization.DeleteCourseControllerTest" time="0.11"/>
+  <testcase name="testDeleteCourseRequest()" classname="com.group3.AdminAndAuthorization.DeleteCourseControllerTest" time="0.155"/>
+  <system-out><![CDATA[2020-03-06 05:05:16.222  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group3.AdminAndAuthorization.DeleteCourseControllerTest], using SpringBootContextLoader
+2020-03-06 05:05:16.223  INFO 43250 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group3.AdminAndAuthorization.DeleteCourseControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-06 05:05:16.227  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-03-06 05:05:16.229  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b97d25, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c1afd3b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@66f18927, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e90e740, org.springframework.test.context.support.DirtiesContextTestExecutionListener@330dfde2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68a52d9d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@277291f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7ba464f6, org.springframework.test.context.event.EventPublishingTestExecutionListener@271a648d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@66926c36, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5d168e2a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5cdc2aa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7107e092, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@401c158, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6d0f682c]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /DeleteCoursePage
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@905f8111: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@905f8111: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMIN}
+
+Handler:
+             Type = com.group3.AdminAndAuthorization.DeleteCourseController
+           Method = com.group3.AdminAndAuthorization.DeleteCourseController#deleteCoursePage(Model)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = DeleteCoursePage.html
+             View = null
+        Attribute = courseList
+            value = [com.group3.BusinessModels.Course@45ae32e8, com.group3.BusinessModels.Course@106da2a0, com.group3.BusinessModels.Course@10ae80e2, com.group3.BusinessModels.Course@62e1feaa, com.group3.BusinessModels.Course@566cb96c, com.group3.BusinessModels.Course@2be979a3, com.group3.BusinessModels.Course@4f2445ac, com.group3.BusinessModels.Course@225df64c, com.group3.BusinessModels.Course@11498cb2, com.group3.BusinessModels.Course@710ddb59, com.group3.BusinessModels.Course@1c69e9f1, com.group3.BusinessModels.Course@514b83a6, com.group3.BusinessModels.Course@cbab921, com.group3.BusinessModels.Course@13f26cfc, com.group3.BusinessModels.Course@40072912, com.group3.BusinessModels.Course@4d5cd407, com.group3.BusinessModels.Course@14760f3c, com.group3.BusinessModels.Course@146304c2, com.group3.BusinessModels.Course@6dd5f0e5, com.group3.BusinessModels.Course@4602fdb4, com.group3.BusinessModels.Course@622905a7, com.group3.BusinessModels.Course@6e604834, com.group3.BusinessModels.Course@2c70dfc5, com.group3.BusinessModels.Course@7d4e78a2, com.group3.BusinessModels.Course@57e04e91, com.group3.BusinessModels.Course@3b2d9db1, com.group3.BusinessModels.Course@1189e3e6, com.group3.BusinessModels.Course@1f0c021d, com.group3.BusinessModels.Course@4a4d53ab, com.group3.BusinessModels.Course@1dda9f46, com.group3.BusinessModels.Course@4312c9c8, com.group3.BusinessModels.Course@3c71275d, com.group3.BusinessModels.Course@1c01eb73, com.group3.BusinessModels.Course@5568671a, com.group3.BusinessModels.Course@61b8f6, com.group3.BusinessModels.Course@351f3c68, com.group3.BusinessModels.Course@265613cb, com.group3.BusinessModels.Course@3010f0ac, com.group3.BusinessModels.Course@3dbb5850, com.group3.BusinessModels.Course@718bdff3, com.group3.BusinessModels.Course@67d54242, com.group3.BusinessModels.Course@50f74b84, com.group3.BusinessModels.Course@3769f012, com.group3.BusinessModels.Course@18b2c54b, com.group3.BusinessModels.Course@55b8434d, com.group3.BusinessModels.Course@3f798915, com.group3.BusinessModels.Course@47e80788, com.group3.BusinessModels.Course@497e0aa3, com.group3.BusinessModels.Course@5e4b8aea, com.group3.BusinessModels.Course@2d898117, com.group3.BusinessModels.Course@2a5a1769, com.group3.BusinessModels.Course@13c82b93, com.group3.BusinessModels.Course@1156ffda, com.group3.BusinessModels.Course@70b645de, com.group3.BusinessModels.Course@aadf5fe, com.group3.BusinessModels.Course@58ebc38b, com.group3.BusinessModels.Course@1beccc01, com.group3.BusinessModels.Course@461c5764, com.group3.BusinessModels.Course@538dfae3, com.group3.BusinessModels.Course@9657818, com.group3.BusinessModels.Course@7faae533, com.group3.BusinessModels.Course@7a2861f3, com.group3.BusinessModels.Course@15d01a60, com.group3.BusinessModels.Course@4f2cd70b, com.group3.BusinessModels.Course@678730a0, com.group3.BusinessModels.Course@5e19f25a, com.group3.BusinessModels.Course@4b8fe0e3, com.group3.BusinessModels.Course@62b2e216, com.group3.BusinessModels.Course@3c6edcd0, com.group3.BusinessModels.Course@2d746225, com.group3.BusinessModels.Course@19481790, com.group3.BusinessModels.Course@6c1ff4fd, com.group3.BusinessModels.Course@265d2df2, com.group3.BusinessModels.Course@28b61656, com.group3.BusinessModels.Course@719b7047, com.group3.BusinessModels.Course@62b0ca95, com.group3.BusinessModels.Course@2dcd498c, com.group3.BusinessModels.Course@3551eec5, com.group3.BusinessModels.Course@1f62a960, com.group3.BusinessModels.Course@7b623c7b, com.group3.BusinessModels.Course@3ca49bb2, com.group3.BusinessModels.Course@25a62fca, com.group3.BusinessModels.Course@6401d0f9, com.group3.BusinessModels.Course@5974bee4, com.group3.BusinessModels.Course@53441a73]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Language:"en", Content-Type:"text/html;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Delete Course</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="color: #0066cc;line-height: 30px;">
+    
+    <div class="container">
+        <h1 style="line-height: 30px;font-size: 19px;"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Currently available courses</strong></h1>
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped" border="1" align="center">
+                <thead>
+                    <tr align = "center">
+                        <th>Course ID</th>
+                        <th>Course Name</th>
+                        <th>Delete Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT7777" name="CourseId"/> 
+                       <input type="hidden" value="Computational Biotechnology II" name="CourseName"/>
+                      <td value="CSCT7777" name="CourseId">CSCT7777</td>
+                      <td value="Computational Biotechnology II"    name="CourseName">Computational Biotechnology II</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+   <div class="container"><span></div>
+</body>
+
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /deleteCourse
+       Parameters = {CourseId=[CSCT3100], CourseName=[NLP Advanced]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@81c98b2: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@81c98b2: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMIN}
+
+Handler:
+             Type = com.group3.AdminAndAuthorization.DeleteCourseController
+           Method = com.group3.AdminAndAuthorization.DeleteCourseController#deleteCourseRequest(Course, Model)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = DeleteCoursePage.html
+             View = null
+        Attribute = course
+            value = com.group3.BusinessModels.Course@503fb795
+           errors = []
+        Attribute = feedBackMessage
+            value = NLP Advanced (CSCT3100)  is deleted sucessfully 
+        Attribute = courseList
+            value = [com.group3.BusinessModels.Course@45ae32e8, com.group3.BusinessModels.Course@106da2a0, com.group3.BusinessModels.Course@10ae80e2, com.group3.BusinessModels.Course@62e1feaa, com.group3.BusinessModels.Course@566cb96c, com.group3.BusinessModels.Course@2be979a3, com.group3.BusinessModels.Course@4f2445ac, com.group3.BusinessModels.Course@225df64c, com.group3.BusinessModels.Course@11498cb2, com.group3.BusinessModels.Course@710ddb59, com.group3.BusinessModels.Course@1c69e9f1, com.group3.BusinessModels.Course@514b83a6, com.group3.BusinessModels.Course@cbab921, com.group3.BusinessModels.Course@13f26cfc, com.group3.BusinessModels.Course@40072912, com.group3.BusinessModels.Course@4d5cd407, com.group3.BusinessModels.Course@14760f3c, com.group3.BusinessModels.Course@146304c2, com.group3.BusinessModels.Course@6dd5f0e5, com.group3.BusinessModels.Course@4602fdb4, com.group3.BusinessModels.Course@622905a7, com.group3.BusinessModels.Course@6e604834, com.group3.BusinessModels.Course@2c70dfc5, com.group3.BusinessModels.Course@7d4e78a2, com.group3.BusinessModels.Course@57e04e91, com.group3.BusinessModels.Course@3b2d9db1, com.group3.BusinessModels.Course@1189e3e6, com.group3.BusinessModels.Course@1f0c021d, com.group3.BusinessModels.Course@4a4d53ab, com.group3.BusinessModels.Course@1dda9f46, com.group3.BusinessModels.Course@4312c9c8, com.group3.BusinessModels.Course@3c71275d, com.group3.BusinessModels.Course@1c01eb73, com.group3.BusinessModels.Course@5568671a, com.group3.BusinessModels.Course@61b8f6, com.group3.BusinessModels.Course@351f3c68, com.group3.BusinessModels.Course@265613cb, com.group3.BusinessModels.Course@3010f0ac, com.group3.BusinessModels.Course@3dbb5850, com.group3.BusinessModels.Course@718bdff3, com.group3.BusinessModels.Course@67d54242, com.group3.BusinessModels.Course@50f74b84, com.group3.BusinessModels.Course@3769f012, com.group3.BusinessModels.Course@18b2c54b, com.group3.BusinessModels.Course@55b8434d, com.group3.BusinessModels.Course@3f798915, com.group3.BusinessModels.Course@47e80788, com.group3.BusinessModels.Course@497e0aa3, com.group3.BusinessModels.Course@5e4b8aea, com.group3.BusinessModels.Course@2d898117, com.group3.BusinessModels.Course@2a5a1769, com.group3.BusinessModels.Course@13c82b93, com.group3.BusinessModels.Course@1156ffda, com.group3.BusinessModels.Course@70b645de, com.group3.BusinessModels.Course@aadf5fe, com.group3.BusinessModels.Course@58ebc38b, com.group3.BusinessModels.Course@1beccc01, com.group3.BusinessModels.Course@461c5764, com.group3.BusinessModels.Course@538dfae3, com.group3.BusinessModels.Course@9657818, com.group3.BusinessModels.Course@7faae533, com.group3.BusinessModels.Course@7a2861f3, com.group3.BusinessModels.Course@15d01a60, com.group3.BusinessModels.Course@4f2cd70b, com.group3.BusinessModels.Course@678730a0, com.group3.BusinessModels.Course@5e19f25a, com.group3.BusinessModels.Course@4b8fe0e3, com.group3.BusinessModels.Course@62b2e216, com.group3.BusinessModels.Course@3c6edcd0, com.group3.BusinessModels.Course@2d746225, com.group3.BusinessModels.Course@19481790, com.group3.BusinessModels.Course@6c1ff4fd, com.group3.BusinessModels.Course@265d2df2, com.group3.BusinessModels.Course@28b61656, com.group3.BusinessModels.Course@719b7047, com.group3.BusinessModels.Course@62b0ca95, com.group3.BusinessModels.Course@2dcd498c, com.group3.BusinessModels.Course@3551eec5, com.group3.BusinessModels.Course@1f62a960, com.group3.BusinessModels.Course@7b623c7b, com.group3.BusinessModels.Course@3ca49bb2, com.group3.BusinessModels.Course@25a62fca, com.group3.BusinessModels.Course@6401d0f9, com.group3.BusinessModels.Course@5974bee4, com.group3.BusinessModels.Course@53441a73, com.group3.BusinessModels.Course@c460036, com.group3.BusinessModels.Course@459affb9, com.group3.BusinessModels.Course@244832ef]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Language:"en", Content-Type:"text/html;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Delete Course</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="color: #0066cc;line-height: 30px;">
+    
+    <div class="container">
+        <h1 style="line-height: 30px;font-size: 19px;"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Currently available courses</strong></h1>
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped" border="1" align="center">
+                <thead>
+                    <tr align = "center">
+                        <th>Course ID</th>
+                        <th>Course Name</th>
+                        <th>Delete Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT7777" name="CourseId"/> 
+                       <input type="hidden" value="Computational Biotechnology II" name="CourseName"/>
+                      <td value="CSCT7777" name="CourseId">CSCT7777</td>
+                      <td value="Computational Biotechnology II"    name="CourseName">Computational Biotechnology II</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT3100" name="CourseId"/> 
+                       <input type="hidden" value="NLP Advanced" name="CourseName"/>
+                      <td value="CSCT3100" name="CourseId">CSCT3100</td>
+                      <td value="NLP Advanced"    name="CourseName">NLP Advanced</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="csci6406" name="CourseId"/> 
+                       <input type="hidden" value="Visualization" name="CourseName"/>
+                      <td value="csci6406" name="CourseId">csci6406</td>
+                      <td value="Visualization"    name="CourseName">Visualization</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCI6748" name="CourseId"/> 
+                       <input type="hidden" value="Virtual Reality" name="CourseName"/>
+                      <td value="CSCI6748" name="CourseId">CSCI6748</td>
+                      <td value="Virtual Reality"    name="CourseName">Virtual Reality</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                
+                    <tr align = "center">
+                    <form action="/deleteCourse" method="post">
+                      <input type="hidden" value="CSCT5111" name="CourseId"/> 
+                       <input type="hidden" value="Data Technology" name="CourseName"/>
+                      <td value="CSCT5111" name="CourseId">CSCT5111</td>
+                      <td value="Data Technology"    name="CourseName">Data Technology</td>
+                      <td><button class="btn btn-danger" type="submit">delete</button></td>
+                    </form>
+                        
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+   <div class="container"><span>NLP Advanced (CSCT3100)  is deleted sucessfully </div>
+</body>
+
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'CSCT3100' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.group3.AdminAndAuthorization.DAO.AddCourseDAO.addCourse(AddCourseDAO.java:39)
+	at com.group3.AdminAndAuthorization.DeleteCourseControllerTest.testDeleteCoursePage(DeleteCourseControllerTest.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+</testsuite>

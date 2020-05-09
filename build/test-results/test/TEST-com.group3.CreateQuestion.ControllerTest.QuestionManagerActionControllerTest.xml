@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.CreateQuestion.ControllerTest.QuestionManagerActionControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:06" hostname="Parths-MacBook-Air.local" time="0.051">
+  <properties/>
+  <testcase name="getCoursesByEmailIdTest()" classname="com.group3.CreateQuestion.ControllerTest.QuestionManagerActionControllerTest" time="0.051"/>
+  <system-out><![CDATA[2020-03-06 05:05:04.811  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group3.CreateQuestion.ControllerTest.QuestionManagerActionControllerTest], using SpringBootContextLoader
+2020-03-06 05:05:04.811  INFO 43250 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group3.CreateQuestion.ControllerTest.QuestionManagerActionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-06 05:05:04.813  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-03-06 05:05:04.814  INFO 43250 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@409dc71d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@74bd6030, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b61025a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f52b4f3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7159252b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e7a77d0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6d8acb97, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@27351ff9, org.springframework.test.context.event.EventPublishingTestExecutionListener@1ffd1649, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@22043691, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@19e98735, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@16ac8926, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@61949ae4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@62a798f9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37a27bb7]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-03-06 05:05:04.850  INFO 43250 --- [    Test worker] .C.C.QuestionManagerActionControllerTest : Starting QuestionManagerActionControllerTest on TA143.WPA.Dal.Ca with PID 43250 (started by parthpanchal7 in /Users/parthpanchal7/Documents/realsedProject/freshRepo/group-three)
+2020-03-06 05:05:04.860  INFO 43250 --- [    Test worker] .C.C.QuestionManagerActionControllerTest : No active profile set, falling back to default profiles: default
+2020-03-06 05:05:05.412  INFO 43250 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-03-06 05:05:05.417  INFO 43250 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 05:05:05.417  INFO 43250 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 05:05:05.438  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat-9].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-03-06 05:05:05.438  INFO 43250 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 567 ms
+2020-03-06 05:05:05.519  INFO 43250 --- [    Test worker] c.g.C.Services.DeleteQuestionService     : DeleteQuestionService constructor called!
+2020-03-06 05:05:05.520  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:05:05.521  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:05:05.523  INFO 43250 --- [    Test worker] c.g.C.Services.ObtainQuestionsService    : ObtainQuestions constructor called!
+2020-03-06 05:05:05.937  INFO 43250 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15c9045a, org.springframework.security.web.context.SecurityContextPersistenceFilter@64d9be7, org.springframework.security.web.header.HeaderWriterFilter@33c575ac, org.springframework.web.filter.CorsFilter@3e6c6ba5, org.springframework.security.web.authentication.logout.LogoutFilter@43353f55, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1949917d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@295ac3cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@312aab5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d9d3f3e, org.springframework.security.web.session.SessionManagementFilter@b3199a, org.springframework.security.web.access.ExceptionTranslationFilter@6838f002, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72082947]
+2020-03-06 05:05:06.015  INFO 43250 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 05:05:06.225  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat-9].[localhost].[/]     : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:05:06.225  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:05:06.231  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2020-03-06 05:05:06.245  INFO 43250 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59649 (http) with context path ''
+2020-03-06 05:05:06.246  INFO 43250 --- [    Test worker] .C.C.QuestionManagerActionControllerTest : Started QuestionManagerActionControllerTest in 1.427 seconds (JVM running for 36.947)
+2020-03-06 05:05:06.252  INFO 43250 --- [    Test worker] c.g.C.QuestionManagerActionController    : QuestionManager Request Triggered!
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /QuestionManager
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.group3.CreateQuestion.QuestionManagerActionController
+           Method = com.group3.CreateQuestion.QuestionManagerActionController#renderQuestionGenerationPage()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = QuestionManager.html
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Language:"en", Content-Type:"text/html;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Welcome to the portal</h1>
+<!-- 
+  <h3 th:text="${courseId}"></h3>
+  <h4 th:text="${courseName}"></h4>
+ -->
+  <p>Choose an action</p>
+  <button class="btn btn-primary active" onclick="window.location.href='courseAdmin'">Home</button> 
+</div>
+<center>
+<button class="btn btn-primary active" onclick="window.location.href='viewQuestions'">List All Questions</button>
+<button class="btn btn-primary active" onclick="window.location.href='requestQuestionPage'">Create Question</button> 
+<button class="btn btn-primary active" onclick="window.location.href='showAvailableQuestionsToDelete'">Delete Question</button> 
+</center>
+</body>
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

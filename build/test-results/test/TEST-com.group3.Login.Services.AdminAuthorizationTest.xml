@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.Login.Services.AdminAuthorizationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:04:44" hostname="Parths-MacBook-Air.local" time="0.335">
+  <properties/>
+  <testcase name="grantInstructorPageNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.029"/>
+  <testcase name="deleteCoursePageNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.014"/>
+  <testcase name="adminDashboardNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.026"/>
+  <testcase name="adminViewCoursesPageNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.019"/>
+  <testcase name="addCourseNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.058"/>
+  <testcase name="adminLogoutNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.055"/>
+  <testcase name="grantRoleNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.034"/>
+  <testcase name="addCoursePageNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.019"/>
+  <testcase name="deleteCourseNotAccessibletoOtherUsers" classname="com.group3.Login.Services.AdminAuthorizationTest" time="0.037"/>
+  <system-out><![CDATA[2020-03-06 05:04:44.074  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.074  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.077  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2020-03-06 05:04:44.083  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /grantInstructorPage
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /grantInstructorPage
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.103  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.103  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.105  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2020-03-06 05:04:44.107  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /DeleteCoursePage
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /DeleteCoursePage
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.123  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.123  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.125  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2020-03-06 05:04:44.128  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /adminMainPageRequest
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /adminMainPageRequest
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.150  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.150  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.154  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2020-03-06 05:04:44.156  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /ViewCoursesPage
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /ViewCoursesPage
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.169  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.171  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.176  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2020-03-06 05:04:44.183  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /addCourse
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /addCourse
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.259  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.264  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.270  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2020-03-06 05:04:44.284  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /adminLogout
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /adminLogout
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.314  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.315  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.317  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2020-03-06 05:04:44.324  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /GrantRoleRequest
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /GrantRoleRequest
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.352  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.352  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.355  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2020-03-06 05:04:44.357  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /addCoursePageRequest
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /addCoursePageRequest
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+2020-03-06 05:04:44.373  INFO 43250 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-03-06 05:04:44.373  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-06 05:04:44.377  INFO 43250 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2020-03-06 05:04:44.396  WARN 43250 --- [    Test worker] c.g.L.S.CustomAccessDeniedHandler        : User: user attempted to access the protected URL: /deleteCourse
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /deleteCourse
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@574417b9: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@574417b9: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_GUEST,ROLE_INSTRUCTOR,ROLE_STUDENT,ROLE_TA; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_GUEST, ROLE_INSTRUCTOR, ROLE_STUDENT, ROLE_TA}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"/accessdenied"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /accessdenied
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

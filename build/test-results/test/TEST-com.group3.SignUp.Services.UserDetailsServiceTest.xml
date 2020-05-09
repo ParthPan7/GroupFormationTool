@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.SignUp.Services.UserDetailsServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:02" hostname="Parths-MacBook-Air.local" time="0.376">
+  <properties/>
+  <testcase name="Emailtest()" classname="com.group3.SignUp.Services.UserDetailsServiceTest" time="0.369"/>
+  <testcase name="SignUptest()" classname="com.group3.SignUp.Services.UserDetailsServiceTest" time="0.001"/>
+  <testcase name="Passwordtest()" classname="com.group3.SignUp.Services.UserDetailsServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

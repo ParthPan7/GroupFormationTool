@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.Course.Services.GmailServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:04:55" hostname="Parths-MacBook-Air.local" time="0.115">
+  <properties/>
+  <testcase name="setSMTPClientTest()" classname="com.group3.Course.Services.GmailServiceTest" time="0.041"/>
+  <testcase name="sessionTest()" classname="com.group3.Course.Services.GmailServiceTest" time="0.006"/>
+  <testcase name="prepareMessageTest()" classname="com.group3.Course.Services.GmailServiceTest" time="0.057"/>
+  <testcase name="msgTest()" classname="com.group3.Course.Services.GmailServiceTest" time="0.001"/>
+  <testcase name="propertiesTest()" classname="com.group3.Course.Services.GmailServiceTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

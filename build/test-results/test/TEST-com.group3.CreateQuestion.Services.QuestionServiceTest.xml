@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.CreateQuestion.Services.QuestionServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:07" hostname="Parths-MacBook-Air.local" time="0.003">
+  <properties/>
+  <testcase name="saveBasicQuestionInformation()" classname="com.group3.CreateQuestion.Services.QuestionServiceTest" time="0.001"/>
+  <testcase name="getQuestionType()" classname="com.group3.CreateQuestion.Services.QuestionServiceTest" time="0.002"/>
+  <system-out><![CDATA[2020-03-06 05:05:07.967  INFO 43250 --- [    Test worker] c.g.C.Services.QuestionServiceTest       : id generated from mock10
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

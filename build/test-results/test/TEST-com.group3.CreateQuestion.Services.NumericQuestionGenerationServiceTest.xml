@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.group3.CreateQuestion.Services.NumericQuestionGenerationServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-06T09:05:07" hostname="Parths-MacBook-Air.local" time="0.004">
+  <properties/>
+  <testcase name="saveNumericQuestionTest()" classname="com.group3.CreateQuestion.Services.NumericQuestionGenerationServiceTest" time="0.004"/>
+  <system-out><![CDATA[2020-03-06 05:05:07.992  INFO 43250 --- [    Test worker] C.S.NumericQuestionGenerationServiceTest : id generated from mock object35
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
