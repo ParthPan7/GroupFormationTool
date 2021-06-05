@@ -1,8 +1,12 @@
 package com.group3.CreateQuestion;
 
 import com.group3.BusinessModels.Instructor;
-import com.group3.CreateQuestion.DAO.*;
-import com.group3.CreateQuestion.Services.*;
+import com.group3.CreateQuestion.DAO.DAOAbstractFactory;
+import com.group3.CreateQuestion.DAO.IDAOAbstractFactory;
+import com.group3.CreateQuestion.Services.IDeleteQuestionService;
+import com.group3.CreateQuestion.Services.IObtainQuestionsService;
+import com.group3.CreateQuestion.Services.IServiceAbstractFactory;
+import com.group3.CreateQuestion.Services.ServiceAbstractFactory;
 
 import java.util.List;
 
@@ -40,8 +44,9 @@ public class DeleteQuestionController {
 		List<List<String>> questionList;
 
 		logger.info("Question to be deleted: " + questionId);
-		deleteQuestionService.deleteQuestionByQuestionId(questionId);Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		
+		deleteQuestionService.deleteQuestionByQuestionId(questionId);
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
 		String email = authentication.getName();
 		Instructor instructor = new Instructor();
 		instructor.setEmail(email);
